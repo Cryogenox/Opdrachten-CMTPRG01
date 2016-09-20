@@ -1,0 +1,15 @@
+int PCellPin = 0;
+int PCellReading;
+
+
+void setup() {
+  // put your setup code here, to run once:
+Serial.begin(9600);
+}
+
+void loop() {
+  // put your main code here, to run repeatedly:
+PCellReading = analogRead(PCellPin);
+Serial.println("reading");
+Serial.println(PCellReading);
+}
