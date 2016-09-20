@@ -1,3 +1,5 @@
+//if you push the button the led goes on, if you let go of the button the led goes off
+
 int buttonPin = 5; //pushButton number
 int ledPin = 10; //ledPin number
 
