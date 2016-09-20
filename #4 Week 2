@@ -1,0 +1,20 @@
+int buttonPin = 5; //pushButton number
+int ledPin = 10; //ledPin number
+
+int buttonState = 0; //pushbutton variable
+
+void setup() {
+pinMode(ledPin, OUTPUT);
+pinMode(buttonPin, INPUT);
+
+}
+
+void loop() {
+buttonState = digitalRead(buttonPin); //status checken van de pushbutton
+if(buttonState == HIGH) {
+  digitalWrite(ledPin, HIGH);
+}
+else {
+  digitalWrite(ledPin, LOW);
+}
+}
